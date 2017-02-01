@@ -1,0 +1,23 @@
+Question 1:
+
+A short is a number that is  16 bits long. min: -32768 max:32767
+An int is simply and integer which reflects the natural size of
+integers. min: -2147483648 max: 2147483647
+A float is a essentially a decimal with one point of
+percision.Max:3.402823466e+3  min:1.175494351e-38
+A double is like a float but has two points of percision.min:
+1.7976931348623158e+308 max:2.2250738585072014e-308
+
+Question 2:
+Y comes out to 3.0000 because the program will not make the set equation to
+be a float, it is setting y equal to the float and then evaluating the
+equation. After evaluating the equation it most likely rounds down or
+truncates the answer.
+
+Question 3:
+
+When running the code I get an error for x and y stating that the
+initializer element is not constant, I think this happens because you are
+attempting to add a number to a non-number element so it creates the
+error. I believe i and j remain the same because their definitions were not
+altered. 
