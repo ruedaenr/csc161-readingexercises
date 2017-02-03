@@ -1,0 +1,43 @@
+void foo(void) {
+    int x = 5;
+    /* Point A */
+    foo();
+        printf("%d\n", x);
+        }
+    int main(void) {
+            foo();
+            return 0; }
+
+
+The Stack
+=========
+Program Counter: 7
+--- main
+    (empty)          ;At line 7  there is no decleration or anything so the
+                      program is empty
+
+The Stack
+=========
+Program Counter: 2
+--- foo
+    (empty)           ;At line 8 there is a call to foo so the program
+                       counter jumps to the first line of foo.  
+--- main
+    (empty)
+
+The Stack
+=========
+Program Counter: 3
+--- foo
+    x [5]             ;At line 2 of the foo there is a variable
+                      decleration. Foo is the active stack while main remains d                      ormant. 
+
+--- main
+    (empty)             
+
+;After this point, when line four is executed, the program will go into an
+ infinite loop of calling foo over and over again because of the call to
+ foo on line 4. This means that the value of x will never be printed
+ because the program will neve execute that far. 
+                                                     
+                              
